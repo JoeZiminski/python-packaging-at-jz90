@@ -16,3 +16,14 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
+
+dependencies = [
+    "numpy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "setuptools_scm",
+]
