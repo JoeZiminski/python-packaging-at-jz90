@@ -8,6 +8,11 @@ dynamic = ["version"]
 
 license = {text = "BSD-3-Clause"}
 
+dependencies = [
+    "numpy",
+    "pandas",
+]
+
 [build-system]
 requires = [
     "setuptools>=45",
@@ -17,10 +22,6 @@ requires = [
 build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
 
-dependencies = [
-    "numpy",
-    "pandas",
-]
 
 [project.optional-dependencies]
 dev = [
